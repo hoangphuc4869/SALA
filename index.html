@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="FontAwesome6.4Pro/css/all.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="heading container-fluid px-0">
+      <div class="row align-items-center">
+        <div class="col-lg-2">
+          <div class="logo">
+            <a href=""
+              ><img src="imgs/SALA 2023-02 1.png" alt="" class="img-fluid"
+            /></a>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="heading-top">
+            <div class="heading-top-search">
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Nhập nội dung tìm kiếm"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <circle
+                  cx="14.6666"
+                  cy="14.6667"
+                  r="9.33333"
+                  stroke="#00B9F2"
+                  stroke-width="2"
+                />
+                <path
+                  d="M14.6667 10.6667C14.1414 10.6667 13.6213 10.7701 13.136 10.9712C12.6507 11.1722 12.2097 11.4668 11.8383 11.8382C11.4668 12.2097 11.1722 12.6506 10.9712 13.1359C10.7701 13.6212 10.6667 14.1414 10.6667 14.6667"
+                  stroke="#00B9F2"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M26.6667 26.6667L22.6667 22.6667"
+                  stroke="#00B9F2"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="heading-top-login">
+              <span>Đăng ký | Đăng nhập</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M26.48 27.1493C27.0696 27.0264 27.4207 26.4107 27.1458 25.8748C26.3487 24.3209 25.0254 22.9554 23.3052 21.9287C21.2095 20.678 18.6417 20 16 20C13.3584 20 10.7906 20.6779 8.69491 21.9287C6.97466 22.9554 5.65139 24.3209 4.85432 25.8748C4.57944 26.4107 4.93046 27.0264 5.52008 27.1493L7.83918 27.6326C13.2219 28.7544 18.7782 28.7544 24.1609 27.6326L26.48 27.1493Z"
+                  fill="#00B9F2"
+                />
+                <circle cx="16" cy="10.6667" r="6.66667" fill="#00B9F2" />
+              </svg>
+            </div>
+            <div class="heading-top-cart">
+              <span>Giỏ hàng</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M10.6666 10.6667L10.6666 9.33334C10.6666 6.38782 13.0544 4.00001 16 4.00001V4.00001C18.9455 4.00001 21.3333 6.38782 21.3333 9.33334L21.3333 10.6667"
+                  stroke="#00B9F2"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.58579 9.91911C4 10.5049 4 11.4477 4 13.3333V21.3333C4 25.1046 4 26.9902 5.17157 28.1618C6.34315 29.3333 8.22876 29.3333 12 29.3333H20C23.7712 29.3333 25.6569 29.3333 26.8284 28.1618C28 26.9902 28 25.1046 28 21.3333V13.3333C28 11.4477 28 10.5049 27.4142 9.91911C26.8284 9.33333 25.8856 9.33333 24 9.33333H8C6.11438 9.33333 5.17157 9.33333 4.58579 9.91911ZM13 16C13 15.4477 12.5523 15 12 15C11.4477 15 11 15.4477 11 16V18.6667C11 19.2189 11.4477 19.6667 12 19.6667C12.5523 19.6667 13 19.2189 13 18.6667V16ZM21 16C21 15.4477 20.5523 15 20 15C19.4477 15 19 15.4477 19 16V18.6667C19 19.2189 19.4477 19.6667 20 19.6667C20.5523 19.6667 21 19.2189 21 18.6667V16Z"
+                  fill="#00B9F2"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="menu">
+            <ul>
+              <li class="menu-item">
+                <a href="#" class="menu-item-group">
+                  <i class="fa-sharp fa-regular fa-house"></i>
+                  Trang chủ
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-item-group">
+                  <i class="fa-regular fa-users-line"></i>
+                  Dịch vụ - Tiện ích
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-item-group">
+                  <i class="fa-regular fa-ticket"></i>
+                  Giá vé - Vé tháng
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-item-group">
+                  <i class="fa-regular fa-circle-question"></i>
+                  Chương trình thành viên
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-item-group">
+                  <i class="fa-regular fa-sparkles"></i>
+                  Tin tức - Sự kiện
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-item-group">
+                  <i class="fa-regular fa-circle-exclamation"></i>
+                  Hỏi đáp - Liên hệ
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="socials">
+            <span class="bg fb">
+              <a href="#"
+                ><i class="fa-brands fa-facebook-f" style="color: #ffffff"></i
+              ></a>
+            </span>
+            <span class="bg location">
+              <a href="#"><i class="fa-regular fa-location-dot"></i></a>
+            </span>
+            <span class="bg phone">
+              <a href="#"><i class="fa-light fa-phone"></i></a>
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="welcome">
+            <img src="imgs/Rectangle 9.png" alt="" class="welcome-bg" />
+            <div class="col-lg-6">
+              <div class="welcome-content">
+                <p>Welcome to</p>
+                <p>Kids <span>Sala</span></p>
+                <p>
+                  Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
+                  Donec viverra eleifend lacus, vitae ullamcorper metus. Sed
+                  sollicitudin ipsum quis nunc sollicitudin
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="welcome-img">
+                <img src="imgs/image 17.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="attractive">
+            <div class="logo">
+              <img src="imgs/SALA 2023-02 1.png" alt="" />
+            </div>
+            <div class="title">CÔNG VIÊN NƯỚC CỦ CHI CÓ GÌ HẤP DẪN</div>
+            <div class="content">
+              Lorem ipsum dolor sit amet consectetur. Posuere id malesuada sem
+              sit. Erat tempus sed at amet nunc. Quis adipiscing cursus ultrices
+              suspendisse eget sit. Adipiscing potenti leo nam diam nisi luctus
+              tincidunt.
+            </div>
+            <div class="slider-wrap">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="imgs/15-min.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/7_3.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/5_1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div id="swiper-pagination"></div>
+            </div>
+
+            <div class="button-wrap">
+              <button class="more-btn">Xem thêm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg
+      width="100%"
+      height="50"
+      viewBox="0 0 1512 50"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 9.44026C15.8261 5.03406 59.1653 -2.81693 105.913 1.02992C136.544 4.54172 162.679 10.1299 186.868 15.3024C228.897 24.2897 265.055 32.0213 308.729 25.4233C326.718 22.7057 343.497 19.8491 359.556 17.115L359.567 17.1132L359.567 17.1131C437.947 3.76922 499.199 -6.65879 600.509 16.1744C685.823 35.4022 730.135 20.1777 752.348 13.9777C768.174 9.57153 815.165 -2.81693 861.913 1.02992C892.544 4.54172 918.679 10.1299 942.868 15.3024C984.898 24.2897 1021.06 32.0213 1064.73 25.4233C1082.72 22.7062 1099.49 19.8501 1115.55 17.1165L1115.57 17.1132C1193.95 3.76925 1255.2 -6.65882 1356.51 16.1744C1441.82 35.4022 1484.2 23.5753 1506.41 17.3753C1508.43 16.8098 1510.29 16.2911 1512 15.8471V2025.72C1466.35 2048.21 1379.61 2059.77 1293.29 2042.64C1281.54 2040.31 1269.21 2037.7 1256.39 2034.98L1256.31 2034.96C1184.99 2019.83 1098.64 2001.51 1013.39 2011.08C986.16 2014.13 961.379 2019.6 935.967 2025.21C886.138 2036.21 800.739 2047.13 763.304 2049.68C725.87 2052.22 640.043 2055.67 594.391 2049.68C548.739 2043.68 513.156 2037.69 500.309 2034.96C428.992 2019.83 342.642 2001.51 257.386 2011.08C230.16 2014.13 205.379 2019.6 179.968 2025.21L179.962 2025.21C130.135 2036.21 77.8791 2047.74 0 2042.65V9.44026Z"
+        fill="url(#paint0_linear_1770_22667)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_1770_22667"
+          x1="756.004"
+          y1="18.179"
+          x2="756.004"
+          y2="2035.95"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0.0209292" stop-color="#D4F2FF" />
+          <stop offset="0.195675" stop-color="#D4F2FF" />
+          <stop offset="0.281608" stop-color="#FFF0F3" />
+          <stop offset="0.438743" stop-color="#FFF0F3" />
+          <stop offset="0.53777" stop-color="#FFFDE2" />
+          <stop offset="0.698179" stop-color="#FFFDE2" />
+          <stop offset="0.785233" stop-color="#E5FBB6" />
+          <stop offset="0.969031" stop-color="#E5FBB6" />
+        </linearGradient>
+      </defs>
+    </svg>
+    <div class="services container-fluid px-0">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="service">
+            <div class="col-lg-7">
+              <div class="swiper mySwiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="imgs/adrian-dascal-acd3p_zHKCs-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/15-min.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/15-min.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-button-next swipe-btn swiper-button-next1">
+                  <img src="imgs/download.svg" alt="" />
+                </div>
+                <div class="swiper-button-prev swipe-btn swiper-button-prev1">
+                  <img src="imgs/download.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="service-group col-lg-5">
+              <div class="title">TRÒ CHƠI DƯỚI NƯỚC</div>
+              <div class="content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+                dignissimos, voluptatibus illo atque placeat veniam inventore
+                nostrum qui
+              </div>
+              <div class="button-wrap">
+                <button class="more-btn">Xem thêm</button>
+              </div>
+            </div>
+          </div>
+          <div class="service">
+            <div class="col-lg-7">
+              <div class="swiper mySwiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="imgs/5-min.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/15-min.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/15-min.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-button-next swipe-btn swiper-button-next1">
+                  <img src="imgs/download.svg" alt="" />
+                </div>
+                <div class="swiper-button-prev swipe-btn swiper-button-prev1">
+                  <img src="imgs/download.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="service-group col-lg-5">
+              <div class="title" style="color: #ce2020">
+                HOẠT ĐỘNG TRẢI NGHIỆM
+              </div>
+              <div class="content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+                dignissimos, voluptatibus illo atque placeat veniam inventore
+                nostrum qui
+              </div>
+              <div class="button-wrap">
+                <button class="more-btn">Xem thêm</button>
+              </div>
+            </div>
+          </div>
+          <div class="service">
+            <div class="col-lg-7">
+              <div class="swiper mySwiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="imgs/Camping-la-gi.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/15-min.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/15-min.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-button-next swipe-btn swiper-button-next1">
+                  <img src="imgs/download.svg" alt="" />
+                </div>
+                <div class="swiper-button-prev swipe-btn swiper-button-prev1">
+                  <img src="imgs/download.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="service-group col-lg-5">
+              <div class="title" style="color: #eb6300">
+                CAMPING - KHÁCH SẠN
+              </div>
+              <div class="content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+                dignissimos, voluptatibus illo atque placeat veniam inventore
+                nostrum qui
+              </div>
+              <div class="button-wrap">
+                <button class="more-btn">Xem thêm</button>
+              </div>
+            </div>
+          </div>
+          <div class="service">
+            <div class="col-lg-7">
+              <div class="swiper mySwiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="imgs/lily-banse--YHSwy6uqvk-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/15-min.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/15-min.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-button-next swipe-btn swiper-button-next1">
+                  <img src="imgs/download.svg" alt="" />
+                </div>
+                <div class="swiper-button-prev swipe-btn swiper-button-prev1">
+                  <img src="imgs/download.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="service-group col-lg-5">
+              <div class="title" style="color: #00875d">ẨM THỰC - TIỆN ÍCH</div>
+              <div class="content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+                dignissimos, voluptatibus illo atque placeat veniam inventore
+                nostrum qui
+              </div>
+              <div class="button-wrap">
+                <button class="more-btn">Xem thêm</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg
+      width="100%"
+      height="80"
+      viewBox="0 1973 1512 80"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 9.44026C15.8261 5.03406 59.1653 -2.81693 105.913 1.02992C136.544 4.54172 162.679 10.1299 186.868 15.3024C228.897 24.2897 265.055 32.0213 308.729 25.4233C326.718 22.7057 343.497 19.8491 359.556 17.115L359.567 17.1132L359.567 17.1131C437.947 3.76922 499.199 -6.65879 600.509 16.1744C685.823 35.4022 730.135 20.1777 752.348 13.9777C768.174 9.57153 815.165 -2.81693 861.913 1.02992C892.544 4.54172 918.679 10.1299 942.868 15.3024C984.898 24.2897 1021.06 32.0213 1064.73 25.4233C1082.72 22.7062 1099.49 19.8501 1115.55 17.1165L1115.57 17.1132C1193.95 3.76925 1255.2 -6.65882 1356.51 16.1744C1441.82 35.4022 1484.2 23.5753 1506.41 17.3753C1508.43 16.8098 1510.29 16.2911 1512 15.8471V2025.72C1466.35 2048.21 1379.61 2059.77 1293.29 2042.64C1281.54 2040.31 1269.21 2037.7 1256.39 2034.98L1256.31 2034.96C1184.99 2019.83 1098.64 2001.51 1013.39 2011.08C986.16 2014.13 961.379 2019.6 935.967 2025.21C886.138 2036.21 800.739 2047.13 763.304 2049.68C725.87 2052.22 640.043 2055.67 594.391 2049.68C548.739 2043.68 513.156 2037.69 500.309 2034.96C428.992 2019.83 342.642 2001.51 257.386 2011.08C230.16 2014.13 205.379 2019.6 179.968 2025.21L179.962 2025.21C130.135 2036.21 77.8791 2047.74 0 2042.65V9.44026Z"
+        fill="url(#paint0_linear_1770_22667)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_1770_22667"
+          x1="756.004"
+          y1="18.179"
+          x2="756.004"
+          y2="2035.95"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0.0209292" stop-color="#D4F2FF" />
+          <stop offset="0.195675" stop-color="#D4F2FF" />
+          <stop offset="0.281608" stop-color="#FFF0F3" />
+          <stop offset="0.438743" stop-color="#FFF0F3" />
+          <stop offset="0.53777" stop-color="#FFFDE2" />
+          <stop offset="0.698179" stop-color="#FFFDE2" />
+          <stop offset="0.785233" stop-color="#E5FBB6" />
+          <stop offset="0.969031" stop-color="#E5FBB6" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <div class="opening-time-wrap container-fluid px-0">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="opening-wrap row">
+            <div class="col-lg-6">
+              <div class="time">
+                <div class="from">06:30</div>
+                <span>đến</span>
+                <div class="to">17:30</div>
+                <p>
+                  Áp dụng từ 26/07 <br />
+                  đến khi có thông báo mới
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 px-0">
+              <img
+                src="imgs/kisspng-cartoon-network-amazone-water-park-image-pool-wate-wedding-park-water-birthday-invitation-party-vecto-5d1b49460b19f3.9942215415620693180455-removebg-preview.png"
+                alt=""
+                class="w-100 h-100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="app.js"></script>
+</html>
