@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/style-2.css" />
-    <title>Đăng ký</title>
+    <title>Tài khoản</title>
   </head>
   <body>
     <div class="login-form-wrap">
@@ -286,106 +286,249 @@
         <div class="col-lg-8">
           <div class="breadcrumb">
             Trang chủ <i class="fa-solid fa-arrow-right"></i>
-            <span>Đăng ký</span>
+            <span>Tài khoản</span>
           </div>
-          <div class="regis-title">Đăng ký</div>
-          <div class="container px-0 position-relative">
-            <div class="img-deco">
-              <img src="imgs/image 22.png" alt="" />
-              <img src="imgs/image 25.png" alt="" />
+          <div class="regis-title">Tài khoản</div>
+          <div class="avatarWrap">
+            <div class="avatar">
+              <img src="imgs/icon-256x256.png" alt="" />
             </div>
-            <div class="title-regis-form">Form đăng ký</div>
-            <p
-              style="
-                font-size: 12px;
-                font-style: italic;
-                margin-left: 12px;
-                margin-bottom: 10px;
-              "
-              class="required"
-            >
-              Mục có dấu * là bắt buộc
-            </p>
-            <form action="">
-              <div class="row">
-                <div class="col-lg-6">
-                  <input
-                    type="text"
-                    placeholder="Họ và Tên *"
-                    class="w-100 regis-item"
-                    id="name"
-                    required
-                  />
-                </div>
-                <div class="col-lg-6">
-                  <input
-                    type="text"
-                    placeholder="Điện thoại *"
-                    class="w-100 regis-item"
-                    id="phone"
-                    required
-                  />
-                </div>
-                <div class="col-lg-6">
-                  <input
-                    type="password"
-                    placeholder="Mật khẩu *"
-                    class="w-100 regis-item"
-                    id="password"
-                    required
-                  />
-                </div>
-                <div class="col-lg-6">
-                  <input
-                    type="password"
-                    placeholder="Xác nhận mật khẩu *"
-                    class="w-100 regis-item"
-                    id="password2"
-                    required
-                  />
-                </div>
+            <div class="userNamee"></div>
+          </div>
+          <div class="container account-wrap">
+            <div class="row align-items-start">
+              <div
+                class="nav flex-column nav-pills col-md-4"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <button
+                  data-icon="&#xe196;"
+                  class="nav-link active"
+                  id="dashboard"
+                  data-bs-toggle="pill"
+                  data-bs-target="#dashboard-content"
+                  type="button"
+                  role="tab"
+                  aria-controls="dashboard-content"
+                  aria-selected="true"
+                >
+                  Dashboard
+                </button>
+                <button
+                  data-icon="&#xf290;"
+                  class="nav-link"
+                  id="orders"
+                  data-bs-toggle="pill"
+                  data-bs-target="#order-content"
+                  type="button"
+                  role="tab"
+                  aria-controls="order-content"
+                  aria-selected="false"
+                >
+                  Đơn hàng
+                </button>
+                <button
+                  data-icon="&#xf007;"
+                  class="nav-link"
+                  id="account"
+                  data-bs-toggle="pill"
+                  data-bs-target="#account-content"
+                  type="button"
+                  role="tab"
+                  aria-controls="account-content"
+                  aria-selected="false"
+                >
+                  Tài khoản
+                </button>
+                <button
+                  data-icon="&#xf2f5;"
+                  id="log-out"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false"
+                  class="nav-link log-out-btn"
+                >
+                  Thoát
+                </button>
+              </div>
 
-                <div class="col-lg-6">
-                  <select name="gender" id="gender">
-                    <option disabled selected value="volvo">Giới tính</option>
-                    <option value="Nam">Nam</option>
-                    <option value="Nữ">Nữ</option>
-                    <option value="Khác">Khác</option>
-                  </select>
+              <div class="tab-content col-md-8" id="v-pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="dashboard-content"
+                  role="tabpanel"
+                  aria-labelledby="dashboard"
+                >
+                  <p>
+                    Xin chào
+                    <span class="dashboard-user-name">anonymous</span>, không
+                    phải <span class="dashboard-user-name">anonymous</span>?
+                    <span class="log-out-btn">Thoát</span>
+                  </p>
+                  <p>
+                    Tại đây bạn có thể xem
+                    <span class="recent-order-text">đơn hàng gần đây</span> và
+                    chỉnh sửa
+                    <span class="account-detail">thông tin tài khoản</span> của
+                    bạn
+                  </p>
                 </div>
-                <div class="col-lg-6">
-                  <input
-                    type="text"
-                    placeholder="Email *"
-                    class="w-100 regis-item"
-                    id="email"
-                    required
-                  />
-                </div>
-                <div class="col-lg-6">
-                  <input
-                    type="date"
-                    placeholder="Ngày sinh"
-                    class="w-100 regis-item"
-                    id="dob"
-                  />
-                </div>
-                <div class="col-lg-6">
-                  <input
-                    type="text"
-                    placeholder="Địa chỉ"
-                    class="w-100 regis-item"
-                    id="address"
-                  />
-                </div>
+                <div
+                  class="tab-pane fade"
+                  id="order-content"
+                  role="tabpanel"
+                  aria-labelledby="orders"
+                >
+                  <div class="questions">
+                    <div class="question-title">
+                      <i class="fa-solid fa-bag-shopping"></i>
+                      Đơn hàng của bạn
+                    </div>
+                    <div class="question">
+                      <div class="questitle">
+                        Are we allowed to do this?
+                        <i class="fa-light fa-angle-down"></i>
+                      </div>
+                      <div class="answer">
+                        Rich in mystery across the centuries decipherment finite
+                        but unbounded Rig Veda globular star cluster. Rich in
+                        heavy atoms hydrogen atoms concept of the number one
+                        radio telescope at the edge of forever two ghostly white
+                        figures in coveralls and helmets are soflty dancing.
+                        Encyclopaedia galactica a mote of dust suspended in a
+                        sunbeam concept of the number one kindling the energy
+                        hidden in matter.
+                      </div>
+                    </div>
+                    <div class="question">
+                      <div class="questitle">
+                        Can I make any change?
+                        <i class="fa-light fa-angle-down"></i>
+                      </div>
+                      <div class="answer">
+                        Rich in mystery across the centuries decipherment finite
+                        but unbounded Rig Veda globular star cluster. Rich in
+                        heavy atoms hydrogen atoms concept of the number one
+                        radio telescope at the edge of forever two ghostly white
+                        figures in coveralls and helmets are soflty dancing.
+                        Encyclopaedia galactica a mote of dust suspended in a
+                        sunbeam concept of the number one kindling the energy
+                        hidden in matter.
+                      </div>
+                    </div>
 
-                <div class="col-lg-12">
-                  <div class="regis-wrap">
-                    <input type="submit" value="ĐĂNG KÝ" class="regis-btn" />
+                    <div class="question">
+                      <div class="questitle">
+                        What if I changed my mind?
+                        <i class="fa-light fa-angle-down"></i>
+                      </div>
+                      <div class="answer">
+                        Rich in mystery across the centuries decipherment finite
+                        but unbounded Rig Veda globular star cluster. Rich in
+                        heavy atoms hydrogen atoms concept of the number one
+                        radio telescope at the edge of forever two ghostly white
+                        figures in coveralls and helmets are soflty dancing.
+                        Encyclopaedia galactica a mote of dust suspended in a
+                        sunbeam concept of the number one kindling the energy
+                        hidden in matter.
+                      </div>
+                    </div>
+                    <div class="question">
+                      <div class="questitle">
+                        Change account settings?
+                        <i class="fa-light fa-angle-down"></i>
+                      </div>
+                      <div class="answer">
+                        Rich in mystery across the centuries decipherment finite
+                        but unbounded Rig Veda globular star cluster. Rich in
+                        heavy atoms hydrogen atoms concept of the number one
+                        radio telescope at the edge of forever two ghostly white
+                        figures in coveralls and helmets are soflty dancing.
+                        Encyclopaedia galactica a mote of dust suspended in a
+                        sunbeam concept of the number one kindling the energy
+                        hidden in matter.
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <div
+                  class="tab-pane fade"
+                  id="account-content"
+                  role="tabpanel"
+                  aria-labelledby="account"
+                >
+                  <form action="" class="account-form">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <input
+                          type="text"
+                          placeholder="Họ và Tên *"
+                          class="w-100 regis-item"
+                          id="cusName"
+                        />
+                      </div>
+                      <div class="col-lg-6">
+                        <input
+                          type="text"
+                          placeholder="Điện thoại *"
+                          class="w-100 regis-item"
+                          id="cusPhone"
+                        />
+                      </div>
+
+                      <div class="col-lg-6">
+                        <select name="gender" id="gender" class="cusGender">
+                          <option disabled selected value="">Giới tính</option>
+                          <option value="Nam">Nam</option>
+                          <option value="Nữ">Nữ</option>
+                          <option value="Khác">Khác</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-6">
+                        <input
+                          type="text"
+                          placeholder="Email *"
+                          class="w-100 regis-item"
+                          id="cusEmail"
+                          required
+                        />
+                      </div>
+                      <div class="col-lg-6">
+                        <input
+                          type="date"
+                          placeholder="Ngày sinh"
+                          class="w-100 regis-item"
+                          id="cusDob"
+                        />
+                      </div>
+                      <div class="col-lg-6">
+                        <input
+                          type="text"
+                          placeholder="Địa chỉ"
+                          class="w-100 regis-item"
+                          id="cusAddress"
+                        />
+                      </div>
+
+                      <div class="col-lg-12">
+                        <div class="regis-wrap">
+                          <input
+                            type="text"
+                            value="XÁC NHẬN"
+                            class="update-btn"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>

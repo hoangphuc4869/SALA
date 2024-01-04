@@ -8,7 +8,8 @@
   justify-content: space-between;
   align-items: center;
 }
-.heading .heading-top-login, .heading .heading-top-cart {
+.heading .heading-top-login,
+.heading .heading-top-cart {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -16,7 +17,8 @@
   transition: 0.3s ease;
   font-weight: 700;
 }
-.heading .heading-top-login:hover, .heading .heading-top-cart:hover {
+.heading .heading-top-login:hover a,
+.heading .heading-top-cart:hover {
   color: #233668;
 }
 .heading .heading-top-search {
@@ -214,6 +216,7 @@ button.more-btn {
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 .swipe-btn.swiper-button-next1 {
@@ -291,7 +294,17 @@ button.more-btn {
 }
 
 .services {
-  background: linear-gradient(180deg, #d4f2ff 2.94%, #d4f2ff 20.12%, #fff0f3 28.56%, #fff0f3 44.01%, #fffde2 53.74%, #fffde2 69.51%, #e5fbb6 78.06%, #e5fbb6 96.13%);
+  background: linear-gradient(
+    180deg,
+    #d4f2ff 2.94%,
+    #d4f2ff 20.12%,
+    #fff0f3 28.56%,
+    #fff0f3 44.01%,
+    #fffde2 53.74%,
+    #fffde2 69.51%,
+    #e5fbb6 78.06%,
+    #e5fbb6 96.13%
+  );
   position: relative;
 }
 
@@ -498,7 +511,7 @@ button.more-btn {
 
 .menu-mob.active {
   opacity: 1;
-  position: auto;
+  pointer-events: auto;
 }
 
 .menu-mob.active ul {
@@ -567,24 +580,30 @@ button.more-btn {
   padding: 10px 20px;
   border: 2px solid rgba(0, 0, 0, 0.7);
   border-radius: 16px;
+  margin-bottom: 10px;
+  background-color: #ccc;
 }
-.login-form-wrap .login-form input:nth-child(2)::placeholder {
+.login-form-wrap .login-form input:nth-child(2)::placeholder,
+.login-form-wrap .login-form input:first-child::placeholder {
   color: #233668;
   font-size: 14px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
 }
-.login-form-wrap .login-form input:nth-child(3) {
-  background-color: #ccc;
-  margin: 20px 0;
+.user-img {
+  margin-bottom: 10px;
 }
-.login-form-wrap .login-form input:nth-child(4) {
+/* .login-form-wrap .login-form input:nth-child(3) {
+  
+  margin: 20px 0;
+} */
+.login-form-wrap .login-form input:nth-child(3) {
   background-color: #00b9f2;
   color: #fff;
   font-weight: 700;
   font-size: 14px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .login-form-wrap .login-form p a {
   font-size: 13px;
@@ -677,14 +696,26 @@ button.more-btn {
 }
 
 .regis-item,
-.regis-btn {
+.regis-btn,
+.updatePass,
+.update-btn {
   padding: 12px 15px;
   margin-bottom: 15px;
   border-radius: 16px;
   border: 1px solid #233668;
 }
+#gender {
+  margin-bottom: 15px;
+  border-radius: 16px;
+  border: 1px solid #233668;
+  padding: 12px 15px;
+  height: unset;
+  width: 100%;
+}
 
-.regis-btn {
+.regis-btn,
+.updatePass,
+.update-btn {
   border-radius: 8px;
   background: #3eb3e2;
   border: none;
@@ -693,8 +724,53 @@ button.more-btn {
   font-weight: 700;
 }
 
+.update-btn {
+  width: fit-content;
+  padding: 12px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.a1 {
+  display: none;
+}
+
+.account-wrap {
+  margin-top: 30px;
+}
+
 .regis-item::placeholder {
   font-size: 14px;
+}
+
+.avatarWrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.avatar {
+  width: 100px;
+}
+
+.userNamee {
+  font-weight: 700;
+}
+
+/* .regis-item {
+  position: relative;
+}
+
+.regis-item::before {
+  position: absolute;
+  content: "*";
+  color: red;
+  top: 0;
+  right: 50%;
+} */
+
+.wrong-pass {
+  display: none;
 }
 
 .regis-wrap {
@@ -1299,7 +1375,9 @@ th svg {
 .ser-des:hover {
   color: #00b9f2;
 }
-
+div#v-pills-tab {
+  margin-bottom: 20px;
+}
 .ser-des {
   cursor: pointer;
   transition: 0.2s ease;
@@ -1358,6 +1436,50 @@ th svg {
 .lo {
   overflow: hidden;
   padding-bottom: 200px;
+}
+.nav-pills .nav-link {
+  border-radius: 0;
+  padding: 15px 0px 15px 50px;
+  text-align: left;
+  color: #8f8989;
+  font-weight: 600;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #ff8664;
+}
+
+#dashboard,
+#orders,
+#account,
+#log-out {
+  position: relative;
+}
+
+#dashboard::before,
+#orders::before,
+#account::before,
+#log-out::before {
+  content: attr(data-icon);
+  font-family: "Font Awesome 6 Pro";
+  position: absolute;
+  left: 20px;
+}
+
+#dashboard-content .log-out-btn,
+.recent-order-text,
+.account-detail {
+  color: #ff8664;
+  cursor: pointer;
+}
+
+#dashboard-content p:first-child {
+  margin-bottom: 20px;
+}
+
+.dashboard-user-name {
+  font-weight: bold;
 }
 
 @media (max-width: 992px) {
@@ -1530,6 +1652,9 @@ th svg {
     position: absolute;
     right: 25px;
     top: 337px;
+  }
+  .avatarWrap {
+    flex-direction: column;
   }
 }
 @media (max-width: 400px) {

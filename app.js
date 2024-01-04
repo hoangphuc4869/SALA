@@ -66,9 +66,16 @@ if (questions) {
 
 var tayNInh = document.querySelector("#tay-ninh");
 var cuChi = document.querySelector("#cu-chi");
-
+if (cuChi) {
+  cuChi.classList.add("active");
+}
 if (tayNInh) {
   tayNInh.addEventListener("click", () => {
+    document.querySelectorAll(".place-name").forEach(function (e) {
+      e.classList.remove("active");
+    });
+
+    tayNInh.classList.add("active");
     var Phone = document.querySelector(".place-phone");
     var Mail = document.querySelector(".place-mail");
     var Place = document.querySelector(".place");
@@ -82,6 +89,11 @@ if (tayNInh) {
   });
 
   cuChi.addEventListener("click", () => {
+    document.querySelectorAll(".place-name").forEach(function (e) {
+      e.classList.remove("active");
+    });
+
+    cuChi.classList.add("active");
     var Phone = document.querySelector(".place-phone");
     var Mail = document.querySelector(".place-mail");
     var Place = document.querySelector(".place");
@@ -91,6 +103,25 @@ if (tayNInh) {
       Mail.innerHTML = "123@gmail.com";
       PlaceTitle.innerHTML = "Củ Chi";
       Place.innerHTML = "9 Điện Biên Phủ, phường 7, huyện Củ Chi";
+    }
+  });
+}
+
+let more = document.querySelector(".more-news button");
+let current_items = 6;
+
+if (more) {
+  more.addEventListener("click", () => {
+    let rooms = [...document.querySelectorAll(".new-wrap .news")];
+    for (var i = current_items; i < current_items + 6; i++) {
+      if (rooms[i]) {
+        rooms[i].style.display = "block";
+      }
+    }
+    current_items += 6;
+    if (current_items >= rooms.length) {
+      more.style.opacity = "0.5";
+      more.style.pointerEvents = "none";
     }
   });
 }
